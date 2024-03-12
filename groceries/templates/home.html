@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>groceries</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <script src="{% static 'js/main.js' %}"></script>
-</head>
-<body>
-    <a href="/inventory">What do we have?</a>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock title %}
+
+{% block content %}
+    <h1>Home</h1>
+    <a href="/inventory">What do we have</a>
+{% endblock content %}
