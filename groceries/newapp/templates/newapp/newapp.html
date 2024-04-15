@@ -6,5 +6,7 @@
 
 {% block content %}
     <h1>newapp</h1>
-    <a href="/inventory">What do we have</a>
+    {% for item in items %}
+        {{ item.title }}
+    {% endfor %}
 {% endblock content %}
